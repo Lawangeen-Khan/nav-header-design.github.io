@@ -1,0 +1,411 @@
+/* colors */
+:root{
+    --primary: #ff9900;
+    --primary-gold: #F1B814;
+    --two: #FB8122;
+    --back: #162b32;
+    --newcolor: #490B3D;
+    --danger: #BD1E51;
+    --new: #1A2238;
+    --body-back: rgb(236, 124, 124);
+    --light: #F0F0F0;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --secondary: #070606;
+    --bluetype: #0A113D;
+    --ternaryz: #c3cace54;
+}
+
+
+
+
+
+
+/* fonts family */
+@font-face{
+    font-family: 'Italianno-Regular';
+    src: url(../fonts/Italianno-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Lobster-Regular';
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Merienda-Bold';
+    src: url(../fonts/Merienda-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Merienda-regular';
+    src: url(../fonts/Merienda-Regular.ttf);
+}
+
+@font-face{
+    font-family: "poppins-regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: "poppins-medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face{
+    font-family: "raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: "raleway-black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+@font-face{
+    font-family: "Pacifico-Regular";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face{
+    font-family: "raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face{
+    font-family: "raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+    font-family: "raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+
+
+
+
+
+/* utility store */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-bt{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.containera{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+body{
+    font-family: 'raleway-medium';
+    scroll-behavior: smooth;
+    background: var(--light);
+    height: 100vh;
+}
+
+
+
+
+
+
+
+/* Navigation Bar */
+nav{
+    background: var(--bluetype);
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    color: var(--pure);
+    position: relative;
+}
+
+nav .containera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .fonta{
+    padding: 15px 0;
+}
+
+nav .fonta .asd{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+nav .fonta .location{
+    margin-right: 0;
+}
+
+nav .fonta .message{
+    margin-left: 0;
+}
+
+nav .fonta .asd a{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--pure);
+    font-family: 'raleway-regular';
+    letter-spacing: 1.10px;
+}
+
+nav .fonta .asd a i{
+    color: var(--two);
+    margin-right: 4px;
+}
+
+nav .right-side .fonte a{
+    text-decoration: none;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 1px solid transparent;
+    background: transparent;
+    margin-right: 4px;
+    transition: all .7s ease;
+}
+
+nav .right-side .fonte a:hover{
+    border: 1px solid var(--pure);
+    background: var(--two);
+    color: var(--secondary);
+}
+
+
+
+
+/* NAVIGATION LINK */
+nav .navigation-link{
+    position: absolute;
+    left: 50%;
+    top: 53px;
+    transform: translateX(-50%);
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background: var(--light);
+    color: var(--secondary);
+    border-radius: 3px;
+    box-shadow: 1px 4px 10px #b6b8be;
+}
+
+nav .navigation-link .wrapper{
+    padding: 20px 13px;
+}
+
+nav .navigation-link .wrapper .wrap .fonta{
+    margin-right: 10px;
+    background: var(--two);
+    padding: 10px 10px;
+    border-radius: 100%;
+}
+
+nav .navigation-link .wrapper .wrap span{
+    font-family: 'raleway-bold';
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: 0.50px;
+    color: var(--bluetype);
+}
+
+nav .navigation-link .wrapper .wrap .logo h3{
+    font-family: 'Italianno-Regular';
+    font-weight: 800;
+    letter-spacing: 1.60px;
+    word-spacing: 1.40px;
+    text-transform: capitalize;
+    font-size: 35px;
+    color: #26bb13;
+    text-shadow: 1px 3px 2px #33353b;
+}
+
+nav .navigation-link .wrapper .wrap .logo h3 span{
+    font-family: 'Italianno-Regular';
+    font-weight: 800;
+    letter-spacing: 1.60px;
+    word-spacing: 1.40px;
+    text-transform: capitalize;
+    font-size: 35px;
+    color:var(--two);
+}
+
+nav .navigation-link .linka{
+    padding: 20px 13px;
+    border-top: 1px dashed var(--ternary);
+    background-attachment: fixed;
+}
+
+.active{
+    background: var(--two) !important;
+    color: var(--new);
+}
+
+.active:hover{
+    color: var(--two) !important;
+    background: transparent !important;
+    border: 2px solid var(--two) !important;
+}
+
+nav .navigation-link .linka a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--new);
+    font-size: 15px;
+    font-family: 'Raleway-bold';
+    background: transparent;
+    padding: 7px 11px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: all .6s ease;
+    letter-spacing: 1.3px;
+}
+
+nav .navigation-link .linka a:hover{
+    color: var(--two);
+    border: 2px solid var(--two);
+}
+
+
+
+
+
+
+
+/* Header */
+header{
+    position: relative;
+}
+
+header .wrapper{
+    position: absolute;
+    top: 175px;
+}
+
+header .wrapper .wrap h4{
+    text-transform: capitalize;
+    font-family: 'Raleway-Medium';
+    font-weight: 800;
+    font-size: 21px;
+    letter-spacing: 1.50px;
+    color: var(--secondary);
+}
+
+header .wrapper .wrap h3{
+    text-transform: capitalize;
+    font-family: 'Raleway-Medium';
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--secondary);
+    letter-spacing: 1.50px;
+}
+
+header .wrapper .wrap .azx{
+    font-size: 30px;
+    font-family: 'raleway-medium';
+    color: var(--two);
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 1.70px;
+    margin-bottom: 5px;
+}
+
+header .wrapper .wrap .logo{
+    font-family: 'Italianno-Regular';
+    font-weight: 800;
+    letter-spacing: 1.60px;
+    word-spacing: 1.40px;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #26bb13;
+    text-shadow: 1px 3px 2px #33353b;
+    margin-left: 10px;
+}
+
+header .wrapper .wrap article{
+    letter-spacing: 1.40px;
+    color: var(--ternary);
+    line-height: 26px;
+}
+
+header .wrapper .wrap .logo span{
+    font-family: 'Italianno-Regular';
+    font-weight: 800;
+    letter-spacing: 1.60px;
+    word-spacing: 1.40px;
+    text-transform: capitalize;
+    font-size: 35px;
+    color:var(--two);
+}
+
+header .wrapper .wrap .btna{
+    margin-top: 10px;
+}
+
+header .wrapper .wrap .btna a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--pure);
+    border: 2px solid transparent;
+    background: var(--danger);
+    padding: 8px 13px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all .6s ease;
+}
+
+header .wrapper .wrap .btna a:hover{
+    background: transparent;
+    font-family: 'Raleway-Bold';
+    border: 2px solid green;
+    color: green;
+}
+
+header .wrapper .wrap .btna a:last-child{
+    margin-left: 10px;
+}
+
+header .wrapper .wrap .imge img{
+    width: 625px;
+    height: auto;
+}
